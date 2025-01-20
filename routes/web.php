@@ -11,3 +11,10 @@ Route::get('/welcome', function () {
 Route::get('/form', function () {
     return view('form');
 });
+Route::get('/master', function () {
+    return view('template.master');
+});
+
+Route::get('/index', function () {
+    return view('index');
+});
