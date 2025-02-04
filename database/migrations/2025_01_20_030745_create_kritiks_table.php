@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('kritiks', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('pengguna_id')->constrained();
+            $table->foreignId('user_id')->constrained();
             $table->foreignId('film_id')->constrained();
             $table->text('content');
             $table->integer('point');

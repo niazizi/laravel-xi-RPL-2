@@ -16,7 +16,7 @@ return new class extends Migration
             $table->integer('umur');
             $table->text('bio');
             $table->text('alamat');
-            $table->foreign('pengguna_id')->constrained();
+            $table->foreignid('user_id')->constrained();
             $table->timestamps();
         });
     }
